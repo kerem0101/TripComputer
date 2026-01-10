@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "STM32 Debug (OpenOCD)",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/Debug/TripComputer.elf", 
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd", 
+            "device": "STM32F070RB", 
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f0x.cfg" 
+            ],
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none"
+        }
+    ]
+}
