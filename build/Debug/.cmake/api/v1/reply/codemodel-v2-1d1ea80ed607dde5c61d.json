@@ -7,7 +7,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "stm32cubemx::@768a070a0fe75716b479",
-					"jsonFile" : "target-stm32cubemx-Debug-598725f4ae340a0db1d7.json",
+					"jsonFile" : "target-stm32cubemx-Debug-33a027720ca19034679b.json",
 					"name" : "stm32cubemx",
 					"projectIndex" : 0
 				}
@@ -29,7 +29,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -48,7 +48,8 @@
 					"source" : "cmake/stm32cubemx",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -69,7 +70,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -77,15 +79,22 @@
 			[
 				{
 					"directoryIndex" : 1,
+					"id" : "FreeRTOS::@768a070a0fe75716b479",
+					"jsonFile" : "target-FreeRTOS-Debug-02a820c6bf4e16d1c5d5.json",
+					"name" : "FreeRTOS",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
 					"id" : "STM32_Drivers::@768a070a0fe75716b479",
-					"jsonFile" : "target-STM32_Drivers-Debug-71fe43bfac07be76f546.json",
+					"jsonFile" : "target-STM32_Drivers-Debug-1f9eb5637d5282bffae3.json",
 					"name" : "STM32_Drivers",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "TripComputer::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TripComputer-Debug-d438f65d4aab6a657799.json",
+					"jsonFile" : "target-TripComputer-Debug-49a056702f98fb5aa0a0.json",
 					"name" : "TripComputer",
 					"projectIndex" : 0
 				}

@@ -37,13 +37,13 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 80,
+				"line" : 103,
 				"parent" : 2
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 69,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
@@ -55,7 +55,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 74,
+				"line" : 97,
 				"parent" : 2
 			},
 			{
@@ -76,6 +76,10 @@
 		{
 			"backtrace" : 3,
 			"id" : "STM32_Drivers::@768a070a0fe75716b479"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "FreeRTOS::@768a070a0fe75716b479"
 		},
 		{
 			"backtrace" : 4,
@@ -113,6 +117,14 @@
 					"path" : "C:/Users/kerem/Documents/TripComputer/Core/Inc/User"
 				},
 				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/Documents/TripComputer/Core/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/Documents/TripComputer/Middlewares/Wrapper"
+				},
+				{
 					"backtrace" : 3,
 					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Core/Inc"
 				},
@@ -123,6 +135,18 @@
 				{
 					"backtrace" : 3,
 					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0"
 				},
 				{
 					"backtrace" : 3,
@@ -149,7 +173,9 @@
 				2,
 				3,
 				4,
-				7
+				5,
+				6,
+				9
 			]
 		},
 		{
@@ -181,6 +207,14 @@
 					"path" : "C:/Users/kerem/Documents/TripComputer/Core/Inc/User"
 				},
 				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/Documents/TripComputer/Core/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/Documents/TripComputer/Middlewares/Wrapper"
+				},
+				{
 					"backtrace" : 3,
 					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Core/Inc"
 				},
@@ -194,6 +228,18 @@
 				},
 				{
 					"backtrace" : 3,
+					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0"
+				},
+				{
+					"backtrace" : 3,
 					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F0xx/Include"
 				},
 				{
@@ -204,7 +250,7 @@
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				5
+				7
 			]
 		},
 		{
@@ -236,6 +282,14 @@
 					"path" : "C:/Users/kerem/Documents/TripComputer/Core/Inc/User"
 				},
 				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/Documents/TripComputer/Core/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/Documents/TripComputer/Middlewares/Wrapper"
+				},
+				{
 					"backtrace" : 3,
 					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Core/Inc"
 				},
@@ -246,6 +300,18 @@
 				{
 					"backtrace" : 3,
 					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0"
 				},
 				{
 					"backtrace" : 3,
@@ -267,7 +333,7 @@
 			},
 			"sourceIndexes" : 
 			[
-				6
+				8
 			]
 		}
 	],
@@ -276,6 +342,10 @@
 		{
 			"backtrace" : 3,
 			"id" : "STM32_Drivers::@768a070a0fe75716b479"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "FreeRTOS::@768a070a0fe75716b479"
 		}
 	],
 	"id" : "TripComputer::@6890427a1f51a3e7e1df",
@@ -310,6 +380,10 @@
 			"fragment" : "m"
 		},
 		{
+			"backtrace" : 3,
+			"id" : "FreeRTOS::@768a070a0fe75716b479"
+		},
+		{
 			"backtrace" : 4,
 			"id" : "stm32cubemx::@768a070a0fe75716b479"
 		}
@@ -332,23 +406,23 @@
 				2,
 				3,
 				4,
+				5,
 				6,
-				7
+				8,
+				9
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				5
+				7
 			]
 		},
 		{
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
-				8,
-				9,
 				10,
 				11,
 				12,
@@ -360,7 +434,20 @@
 				18,
 				19,
 				20,
-				21
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34
 			]
 		}
 	],
@@ -375,6 +462,12 @@
 		{
 			"backtrace" : 6,
 			"compileGroupIndex" : 0,
+			"path" : "Core/Src/freertos.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
 			"path" : "Core/Src/stm32f0xx_it.c",
 			"sourceGroupIndex" : 0
 		},
@@ -382,6 +475,12 @@
 			"backtrace" : 6,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/stm32f0xx_hal_msp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/stm32f0xx_hal_timebase_tim.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -418,6 +517,18 @@
 			"backtrace" : 3,
 			"isGenerated" : true,
 			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f0xx.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -496,6 +607,60 @@
 			"backtrace" : 3,
 			"isGenerated" : true,
 			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c.obj",
 			"sourceGroupIndex" : 2
 		}
 	],
