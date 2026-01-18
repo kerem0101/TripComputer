@@ -48,15 +48,23 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
     "Core/Src/App.cpp"
-    "Core/Src/User/bsp_board.c"
+    "Drivers/BSP/Src/bsp_board.c"
+    "Drivers/BSP/Src/bsp_gps.c"
+    "Middlewares/Wrapper/Src/SystemTask.cpp"
+    "Middlewares/Wrapper/Src/Thread.cpp"
+    "Middlewares/Wrapper/Src/GpsTask.cpp"
+    "Components/Gps/Src/Neo6M.cpp"
+    "Components/Gps/Src/NmeaParser.cpp"
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
-    "Core/Inc/User"
+    "Drivers/BSP/Inc"
     "Core/Inc"
-    "Middlewares/Wrapper"
+    "Middlewares/Wrapper/Inc"
+    "Components/Gps/Inc"
+    "Components/Gps/Interfaces"
 )
 
 # Add project symbols (macros)

@@ -37,25 +37,25 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 103,
+				"line" : 105,
 				"parent" : 2
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 71,
+				"line" : 79,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 55,
+				"line" : 61,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 97,
+				"line" : 99,
 				"parent" : 2
 			},
 			{
@@ -114,47 +114,55 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/kerem/Documents/TripComputer/Core/Inc/User"
+					"path" : "C:/Users/kerem/repos/TripComputer/Drivers/BSP/Inc"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/kerem/Documents/TripComputer/Core/Inc"
+					"path" : "C:/Users/kerem/repos/TripComputer/Core/Inc"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/kerem/Documents/TripComputer/Middlewares/Wrapper"
+					"path" : "C:/Users/kerem/repos/TripComputer/Middlewares/Wrapper/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Gps/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Gps/Interfaces"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Core/Inc"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Core/Inc"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/include"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F0xx/Include"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F0xx/Include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
 				}
 			],
 			"language" : "C",
@@ -175,7 +183,8 @@
 				4,
 				5,
 				6,
-				9
+				9,
+				10
 			]
 		},
 		{
@@ -204,47 +213,55 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/kerem/Documents/TripComputer/Core/Inc/User"
+					"path" : "C:/Users/kerem/repos/TripComputer/Drivers/BSP/Inc"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/kerem/Documents/TripComputer/Core/Inc"
+					"path" : "C:/Users/kerem/repos/TripComputer/Core/Inc"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/kerem/Documents/TripComputer/Middlewares/Wrapper"
+					"path" : "C:/Users/kerem/repos/TripComputer/Middlewares/Wrapper/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Gps/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Gps/Interfaces"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Core/Inc"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Core/Inc"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/include"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F0xx/Include"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F0xx/Include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
 				}
 			],
 			"language" : "ASM",
@@ -279,47 +296,55 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/kerem/Documents/TripComputer/Core/Inc/User"
+					"path" : "C:/Users/kerem/repos/TripComputer/Drivers/BSP/Inc"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/kerem/Documents/TripComputer/Core/Inc"
+					"path" : "C:/Users/kerem/repos/TripComputer/Core/Inc"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "C:/Users/kerem/Documents/TripComputer/Middlewares/Wrapper"
+					"path" : "C:/Users/kerem/repos/TripComputer/Middlewares/Wrapper/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Gps/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Gps/Interfaces"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Core/Inc"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Core/Inc"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/include"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F0xx/Include"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F0xx/Include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/kerem/Documents/TripComputer/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
+					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
 				}
 			],
 			"language" : "CXX",
@@ -333,7 +358,12 @@
 			},
 			"sourceIndexes" : 
 			[
-				8
+				8,
+				11,
+				12,
+				13,
+				14,
+				15
 			]
 		}
 	],
@@ -358,7 +388,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-mcpu=cortex-m0  -T \"C:/Users/kerem/Documents/TripComputer/STM32F070XX_FLASH.ld\" --specs=nano.specs -Wl,-Map=TripComputer.map -Wl,--gc-sections -Wl,--print-memory-usage",
+				"fragment" : "-mcpu=cortex-m0  -T \"C:/Users/kerem/repos/TripComputer/STM32F070XX_FLASH.ld\" --specs=nano.specs -Wl,-Map=TripComputer.map -Wl,--gc-sections -Wl,--print-memory-usage",
 				"role" : "flags"
 			},
 			{
@@ -409,7 +439,13 @@
 				5,
 				6,
 				8,
-				9
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
 			]
 		},
 		{
@@ -423,12 +459,6 @@
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
-				10,
-				11,
-				12,
-				13,
-				14,
-				15,
 				16,
 				17,
 				18,
@@ -447,7 +477,15 @@
 				31,
 				32,
 				33,
-				34
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42
 			]
 		}
 	],
@@ -510,7 +548,43 @@
 		{
 			"backtrace" : 7,
 			"compileGroupIndex" : 0,
-			"path" : "Core/Src/User/bsp_board.c",
+			"path" : "Drivers/BSP/Src/bsp_board.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/BSP/Src/bsp_gps.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 2,
+			"path" : "Middlewares/Wrapper/Src/SystemTask.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 2,
+			"path" : "Middlewares/Wrapper/Src/Thread.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 2,
+			"path" : "Middlewares/Wrapper/Src/GpsTask.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 2,
+			"path" : "Components/Gps/Src/Neo6M.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 2,
+			"path" : "Components/Gps/Src/NmeaParser.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -607,6 +681,18 @@
 			"backtrace" : 3,
 			"isGenerated" : true,
 			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj",
 			"sourceGroupIndex" : 2
 		},
 		{

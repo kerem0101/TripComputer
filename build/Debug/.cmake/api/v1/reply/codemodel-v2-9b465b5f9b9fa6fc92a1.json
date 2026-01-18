@@ -7,7 +7,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "stm32cubemx::@768a070a0fe75716b479",
-					"jsonFile" : "target-stm32cubemx-Debug-33a027720ca19034679b.json",
+					"jsonFile" : "target-stm32cubemx-Debug-69533e2fad8253d67668.json",
 					"name" : "stm32cubemx",
 					"projectIndex" : 0
 				}
@@ -80,21 +80,21 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "FreeRTOS::@768a070a0fe75716b479",
-					"jsonFile" : "target-FreeRTOS-Debug-02a820c6bf4e16d1c5d5.json",
+					"jsonFile" : "target-FreeRTOS-Debug-8eee2b4678463236749b.json",
 					"name" : "FreeRTOS",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "STM32_Drivers::@768a070a0fe75716b479",
-					"jsonFile" : "target-STM32_Drivers-Debug-1f9eb5637d5282bffae3.json",
+					"jsonFile" : "target-STM32_Drivers-Debug-d93cfe8c7b695c17260c.json",
 					"name" : "STM32_Drivers",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "TripComputer::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TripComputer-Debug-49a056702f98fb5aa0a0.json",
+					"jsonFile" : "target-TripComputer-Debug-73e55af0bfdf1dc705be.json",
 					"name" : "TripComputer",
 					"projectIndex" : 0
 				}
@@ -104,8 +104,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/kerem/Documents/TripComputer/build/Debug",
-		"source" : "C:/Users/kerem/Documents/TripComputer"
+		"build" : "C:/Users/kerem/repos/TripComputer/build/Debug",
+		"source" : "C:/Users/kerem/repos/TripComputer"
 	},
 	"version" : 
 	{
