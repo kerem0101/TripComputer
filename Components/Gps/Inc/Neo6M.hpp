@@ -12,7 +12,4 @@ public:
     GpsData getData() const override;
 private:
     GpsData _data;
-    bool _isValid;
-    // Helper function to parse NMEA sentences
-    void parseNMEA(char* nmeaSentence);
 };

@@ -48,7 +48,7 @@ bool NmeaParser::parseSentence(char* sentence, GpsData& outData) {
 bool NmeaParser::validateChecksum(const char* sentence) {
     const char* p = sentence + 1; // skip $
     uint8_t calculated = 0;
-    
+
     // XOR processing until '*' or end of string
     while (*p != '*' && *p != '\0') {
         calculated ^= *p;
