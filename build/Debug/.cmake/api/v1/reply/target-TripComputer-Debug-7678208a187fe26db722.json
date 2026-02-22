@@ -43,13 +43,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 79,
+				"line" : 84,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 61,
+				"line" : 64,
 				"parent" : 0
 			},
 			{
@@ -133,6 +133,14 @@
 					"path" : "C:/Users/kerem/repos/TripComputer/Components/Gps/Interfaces"
 				},
 				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Lcd/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Lcd/Interfaces"
+				},
+				{
 					"backtrace" : 3,
 					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Core/Inc"
 				},
@@ -184,7 +192,8 @@
 				5,
 				6,
 				9,
-				10
+				10,
+				11
 			]
 		},
 		{
@@ -230,6 +239,14 @@
 				{
 					"backtrace" : 5,
 					"path" : "C:/Users/kerem/repos/TripComputer/Components/Gps/Interfaces"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Lcd/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Lcd/Interfaces"
 				},
 				{
 					"backtrace" : 3,
@@ -315,6 +332,14 @@
 					"path" : "C:/Users/kerem/repos/TripComputer/Components/Gps/Interfaces"
 				},
 				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Lcd/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Lcd/Interfaces"
+				},
+				{
 					"backtrace" : 3,
 					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Core/Inc"
 				},
@@ -359,11 +384,13 @@
 			"sourceIndexes" : 
 			[
 				8,
-				11,
 				12,
 				13,
 				14,
-				15
+				15,
+				16,
+				17,
+				18
 			]
 		}
 	],
@@ -445,7 +472,10 @@
 				12,
 				13,
 				14,
-				15
+				15,
+				16,
+				17,
+				18
 			]
 		},
 		{
@@ -459,9 +489,6 @@
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
-				16,
-				17,
-				18,
 				19,
 				20,
 				21,
@@ -485,7 +512,10 @@
 				39,
 				40,
 				41,
-				42
+				42,
+				43,
+				44,
+				45
 			]
 		}
 	],
@@ -559,6 +589,12 @@
 		},
 		{
 			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/BSP/Src/bsp_lcd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
 			"compileGroupIndex" : 2,
 			"path" : "Middlewares/Wrapper/Src/SystemTask.cpp",
 			"sourceGroupIndex" : 0
@@ -578,6 +614,12 @@
 		{
 			"backtrace" : 7,
 			"compileGroupIndex" : 2,
+			"path" : "Middlewares/Wrapper/Src/DisplayTask.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 2,
 			"path" : "Components/Gps/Src/Neo6M.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -585,6 +627,12 @@
 			"backtrace" : 7,
 			"compileGroupIndex" : 2,
 			"path" : "Components/Gps/Src/NmeaParser.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 2,
+			"path" : "Components/Lcd/Src/LcdParallel.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

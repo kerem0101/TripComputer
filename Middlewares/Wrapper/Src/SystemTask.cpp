@@ -11,9 +11,9 @@ void SystemTask::run() {
     
     while (1) {
         // BSP LED toggle function
-        BSP_LED_Toggle(LED_SYSTEM_STATUS);
+        bsp_led_toggle(LED_SYSTEM_STATUS);
         
         // Delay for 500 milliseconds
-        delay(500);
+        bsp_delay(500);
     }
 }

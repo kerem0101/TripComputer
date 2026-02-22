@@ -1,12 +1,10 @@
-#ifndef BSP_BOARD_H
-#define BSP_BOARD_H
+#pragma once
+#include <stdint.h>
+#include <stdbool.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-#include <stdint.h>
-#include <stdbool.h>
 
 // LED definitions
 typedef enum {
@@ -17,18 +15,16 @@ typedef enum {
 // --- Function Prototypes ---
 
 // Starstup and Initialization
-void BSP_Init(void);
+void bsp_init(void);
 
 // LED Control
-void BSP_LED_On(Board_Led_t led);
-void BSP_LED_Off(Board_Led_t led);
-void BSP_LED_Toggle(Board_Led_t led);
+void bsp_led_on(Board_Led_t led);
+void bsp_led_off(Board_Led_t led);
+void bsp_led_toggle(Board_Led_t led);
 
 // Timing (to avoid direct use of HAL_Delay)
-void BSP_Delay(uint32_t ms);
+void bsp_delay(uint32_t ms);
 
 #ifdef __cplusplus
 }
 #endif
-
-#endif // BSP_BOARD_H

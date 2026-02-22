@@ -1,5 +1,4 @@
 #include "Neo6M.hpp"
-#include "bsp_board.h" // UART and hardware functions
 #include "bsp_gps.h"
 #include <cstring>
 #include <cstdio>
