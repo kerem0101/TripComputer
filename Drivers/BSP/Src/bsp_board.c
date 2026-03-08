@@ -29,3 +29,7 @@ void bsp_led_toggle(Board_Led_t led) {
 void bsp_delay(uint32_t ms) {
     HAL_Delay(ms); // STM32 HAL function for delay
 }
+
+uint32_t bsp_system_get_tick_ms(void) {
+    return HAL_GetTick(); 
+}

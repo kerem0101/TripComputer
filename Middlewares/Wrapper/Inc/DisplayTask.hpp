@@ -2,18 +2,19 @@
 
 #include "Thread.hpp"
 #include "IDisplay.hpp"
-#include "GpsData.h" 
-#include "IGps.hpp"
+#include "StateManager.hpp"
+#include "Button.hpp"
 
 class DisplayTask : public Thread {
 public:
-    // DisplayTask need both display and GPS interfaces, so we inject them via constructor
-    DisplayTask(IDisplay& display, IGps& gps);
+    // Constructor: Takes the StateManager and the main Button as dependencies
+    DisplayTask(StateManager& stateManager, Button& mainButton, IDisplay& display);
 
 protected:
     void run() override;
 
 private:
+    StateManager& _stateManager;
+    Button& _mainButton;
     IDisplay& _display;
-    IGps& _gps;
 };

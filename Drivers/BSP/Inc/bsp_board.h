@@ -25,6 +25,9 @@ void bsp_led_toggle(Board_Led_t led);
 // Timing (to avoid direct use of HAL_Delay)
 void bsp_delay(uint32_t ms);
 
+// Returns the current system tick in milliseconds (for button timing, etc.)
+uint32_t bsp_system_get_tick_ms(void);
+
 #ifdef __cplusplus
 }
 #endif

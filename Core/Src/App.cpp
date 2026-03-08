@@ -6,26 +6,50 @@
 #include "GpsTask.hpp" // for GpsTask class
 #include "LcdParallel.hpp" // for LcdParallel display driver
 #include "DisplayTask.hpp" // for DisplayTask class
+#include "Button.hpp"
+#include "SpeedState.hpp"
+#include "TripState.hpp"
+#include "StateManager.hpp"
 
+// ==========================================
+// 1. DRIVERS 
+// ==========================================
 static Neo6M gpsDriver;
-static GpsTask gpsTask(gpsDriver);
 static LcdParallel lcdDriver;
-static DisplayTask displayTask(lcdDriver, gpsDriver);
+static Button mainButton(BTN_ID_MAIN);
 
+// ==========================================
+// 2. UI STATES
+// ==========================================
+static SpeedState speedState;
+static TripState tripState;
+
+// Global pointers used by the states to transition to each other
+IState* speedStateInstance = &speedState;
+IState* tripStateInstance = &tripState;
+
+// ==========================================
+// 3. MANAGERS (Yöneticiler)
+// ==========================================
+// StateManager needs to know how to draw (lcdDriver) and where to get data (gpsDriver)
+static StateManager stateManager(lcdDriver, gpsDriver);
+
+// ==========================================
+// 4. RTOS TASKS 
+// ==========================================
+static GpsTask gpsTask(gpsDriver);
+static DisplayTask displayTask(stateManager, mainButton, lcdDriver);
 static SystemTask systemTask;
 
+// ==========================================
+// MAIN INITIALIZATION (Calling from main.c)
+// ==========================================
 void App_Main() {
     
-    bool gpsStatus = gpsTask.start();
-    if (!gpsStatus)
-        Error_Handler();
+    //Set the initial screen for the Trip Computer
+    stateManager.changeState(&speedState);
 
-    bool displayStatus = displayTask.start();
-    if (!displayStatus)
-        Error_Handler();
-
-    bool status = systemTask.start();
-    if (!status)
-        Error_Handler(); 
-
+    gpsTask.start();
+    displayTask.start();
+    systemTask.start();
 }

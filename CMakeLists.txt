@@ -51,6 +51,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     "Drivers/BSP/Src/bsp_board.c"
     "Drivers/BSP/Src/bsp_gps.c"
     "Drivers/BSP/Src/bsp_lcd.c"
+    "Drivers/BSP/Src/bsp_button.c"
     "Middlewares/Wrapper/Src/SystemTask.cpp"
     "Middlewares/Wrapper/Src/Thread.cpp"
     "Middlewares/Wrapper/Src/GpsTask.cpp"
@@ -58,6 +59,10 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     "Components/Gps/Src/Neo6M.cpp"
     "Components/Gps/Src/NmeaParser.cpp"
     "Components/Lcd/Src/LcdParallel.cpp"
+    "Components/Button/Src/Button.cpp"
+    "Components/StateMachine/Src/TripState.cpp"
+    "Components/StateMachine/Src/SpeedState.cpp"
+    "Components/StateMachine/Src/StateManager.cpp"
 )
 
 # Add include paths
@@ -70,6 +75,9 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     "Components/Gps/Interfaces"
     "Components/Lcd/Inc"
     "Components/Lcd/Interfaces"
+    "Components/Button/Inc"
+    "Components/StateMachine/Inc"
+    "Components/StateMachine/Interfaces"
 )
 
 # Add project symbols (macros)

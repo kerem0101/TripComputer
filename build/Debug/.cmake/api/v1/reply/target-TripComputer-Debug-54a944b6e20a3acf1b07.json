@@ -43,13 +43,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 84,
+				"line" : 92,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 64,
+				"line" : 69,
 				"parent" : 0
 			},
 			{
@@ -141,6 +141,18 @@
 					"path" : "C:/Users/kerem/repos/TripComputer/Components/Lcd/Interfaces"
 				},
 				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Button/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/StateMachine/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/StateMachine/Interfaces"
+				},
+				{
 					"backtrace" : 3,
 					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Core/Inc"
 				},
@@ -193,7 +205,8 @@
 				6,
 				9,
 				10,
-				11
+				11,
+				12
 			]
 		},
 		{
@@ -247,6 +260,18 @@
 				{
 					"backtrace" : 5,
 					"path" : "C:/Users/kerem/repos/TripComputer/Components/Lcd/Interfaces"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Button/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/StateMachine/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/StateMachine/Interfaces"
 				},
 				{
 					"backtrace" : 3,
@@ -340,6 +365,18 @@
 					"path" : "C:/Users/kerem/repos/TripComputer/Components/Lcd/Interfaces"
 				},
 				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Button/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/StateMachine/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/StateMachine/Interfaces"
+				},
+				{
 					"backtrace" : 3,
 					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Core/Inc"
 				},
@@ -384,13 +421,17 @@
 			"sourceIndexes" : 
 			[
 				8,
-				12,
 				13,
 				14,
 				15,
 				16,
 				17,
-				18
+				18,
+				19,
+				20,
+				21,
+				22,
+				23
 			]
 		}
 	],
@@ -475,7 +516,12 @@
 				15,
 				16,
 				17,
-				18
+				18,
+				19,
+				20,
+				21,
+				22,
+				23
 			]
 		},
 		{
@@ -489,11 +535,6 @@
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
-				19,
-				20,
-				21,
-				22,
-				23,
 				24,
 				25,
 				26,
@@ -515,7 +556,12 @@
 				42,
 				43,
 				44,
-				45
+				45,
+				46,
+				47,
+				48,
+				49,
+				50
 			]
 		}
 	],
@@ -595,6 +641,12 @@
 		},
 		{
 			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/BSP/Src/bsp_button.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
 			"compileGroupIndex" : 2,
 			"path" : "Middlewares/Wrapper/Src/SystemTask.cpp",
 			"sourceGroupIndex" : 0
@@ -633,6 +685,30 @@
 			"backtrace" : 7,
 			"compileGroupIndex" : 2,
 			"path" : "Components/Lcd/Src/LcdParallel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 2,
+			"path" : "Components/Button/Src/Button.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 2,
+			"path" : "Components/StateMachine/Src/TripState.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 2,
+			"path" : "Components/StateMachine/Src/SpeedState.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 2,
+			"path" : "Components/StateMachine/Src/StateManager.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

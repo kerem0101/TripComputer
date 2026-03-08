@@ -53,7 +53,7 @@ void LcdParallel::sendData(uint8_t data) {
 
 void LcdParallel::sendByte(uint8_t val) {
     writeNibble(val >> 4);   // First send the high nibble (upper 4 bits)
-    writeNibble(val & 0x0F); // Then send the low nibble (lower 4 bits)
+    writeNibble(val & 0x0F); // Then send the low nibble (lower 4 bits)    
 }
 
 void LcdParallel::writeNibble(uint8_t nibble) {
@@ -61,7 +61,7 @@ void LcdParallel::writeNibble(uint8_t nibble) {
     
     // Enable Pulse (E pin trigger)
     bsp_lcd_set_en(true);
-    bsp_lcd_delay_us(10); 
+    bsp_lcd_delay_ms(2); // Short delay to ensure the LCD latches the data
     bsp_lcd_set_en(false);
-    bsp_lcd_delay_us(50); // small delay for command to process (can be optimized based on command type)
+    bsp_lcd_delay_ms(3); // small delay for command to process (can be optimized based on command type)
 }
