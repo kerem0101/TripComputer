@@ -10,6 +10,7 @@
 #include "SpeedState.hpp"
 #include "TripState.hpp"
 #include "StateManager.hpp"
+#include "Mpu6050.hpp" // for Mpu6050 IMU driver
 
 // ==========================================
 // 1. DRIVERS 
@@ -17,6 +18,7 @@
 static Neo6M gpsDriver;
 static LcdParallel lcdDriver;
 static Button mainButton(BTN_ID_MAIN);
+static Mpu6050 imuDriver;
 
 // ==========================================
 // 2. UI STATES
@@ -52,4 +54,7 @@ void App_Main() {
     gpsTask.start();
     displayTask.start();
     systemTask.start();
+
+    imuDriver.init(); // Initialize the IMU sensor (optional, can be used for future features)
+    imuDriver.update(); // Get initial data (optional)
 }

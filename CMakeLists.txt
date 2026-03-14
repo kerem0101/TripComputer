@@ -52,6 +52,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     "Drivers/BSP/Src/bsp_gps.c"
     "Drivers/BSP/Src/bsp_lcd.c"
     "Drivers/BSP/Src/bsp_button.c"
+    "Drivers/BSP/Src/bsp_i2c.c"
     "Middlewares/Wrapper/Src/SystemTask.cpp"
     "Middlewares/Wrapper/Src/Thread.cpp"
     "Middlewares/Wrapper/Src/GpsTask.cpp"
@@ -63,6 +64,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     "Components/StateMachine/Src/TripState.cpp"
     "Components/StateMachine/Src/SpeedState.cpp"
     "Components/StateMachine/Src/StateManager.cpp"
+    "Components/Gyro/Src/Mpu6050.cpp"
 )
 
 # Add include paths
@@ -78,6 +80,8 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     "Components/Button/Inc"
     "Components/StateMachine/Inc"
     "Components/StateMachine/Interfaces"
+    "Components/Gyro/Inc"
+    "Components/Gyro/Interfaces"
 )
 
 # Add project symbols (macros)

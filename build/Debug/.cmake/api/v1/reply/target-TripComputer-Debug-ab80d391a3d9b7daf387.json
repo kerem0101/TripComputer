@@ -43,13 +43,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 92,
+				"line" : 96,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 69,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
@@ -153,6 +153,14 @@
 					"path" : "C:/Users/kerem/repos/TripComputer/Components/StateMachine/Interfaces"
 				},
 				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Gyro/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Gyro/Interfaces"
+				},
+				{
 					"backtrace" : 3,
 					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Core/Inc"
 				},
@@ -206,7 +214,8 @@
 				9,
 				10,
 				11,
-				12
+				12,
+				13
 			]
 		},
 		{
@@ -272,6 +281,14 @@
 				{
 					"backtrace" : 5,
 					"path" : "C:/Users/kerem/repos/TripComputer/Components/StateMachine/Interfaces"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Gyro/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Gyro/Interfaces"
 				},
 				{
 					"backtrace" : 3,
@@ -377,6 +394,14 @@
 					"path" : "C:/Users/kerem/repos/TripComputer/Components/StateMachine/Interfaces"
 				},
 				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Gyro/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "C:/Users/kerem/repos/TripComputer/Components/Gyro/Interfaces"
+				},
+				{
 					"backtrace" : 3,
 					"path" : "C:/Users/kerem/repos/TripComputer/cmake/stm32cubemx/../../Core/Inc"
 				},
@@ -421,7 +446,6 @@
 			"sourceIndexes" : 
 			[
 				8,
-				13,
 				14,
 				15,
 				16,
@@ -431,7 +455,9 @@
 				20,
 				21,
 				22,
-				23
+				23,
+				24,
+				25
 			]
 		}
 	],
@@ -521,7 +547,9 @@
 				20,
 				21,
 				22,
-				23
+				23,
+				24,
+				25
 			]
 		},
 		{
@@ -535,8 +563,6 @@
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
-				24,
-				25,
 				26,
 				27,
 				28,
@@ -561,7 +587,9 @@
 				47,
 				48,
 				49,
-				50
+				50,
+				51,
+				52
 			]
 		}
 	],
@@ -647,6 +675,12 @@
 		},
 		{
 			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "Drivers/BSP/Src/bsp_i2c.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
 			"compileGroupIndex" : 2,
 			"path" : "Middlewares/Wrapper/Src/SystemTask.cpp",
 			"sourceGroupIndex" : 0
@@ -709,6 +743,12 @@
 			"backtrace" : 7,
 			"compileGroupIndex" : 2,
 			"path" : "Components/StateMachine/Src/StateManager.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 2,
+			"path" : "Components/Gyro/Src/Mpu6050.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
