@@ -1,0 +1,5 @@
+{
+    // Force Cortex-Debug extension to use the multi-architecture GDB
+    // instead of the deprecated arm-none-eabi-gdb for Linux environments
+    "cortex-debug.gdbPath": "gdb-multiarch"
+}

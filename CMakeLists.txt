@@ -55,7 +55,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     "Drivers/BSP/Src/bsp_i2c.c"
     "Middlewares/Wrapper/Src/SystemTask.cpp"
     "Middlewares/Wrapper/Src/Thread.cpp"
-    "Middlewares/Wrapper/Src/GpsTask.cpp"
+    "Middlewares/Wrapper/Src/NavigationTask.cpp"
     "Middlewares/Wrapper/Src/DisplayTask.cpp"
     "Components/Gps/Src/Neo6M.cpp"
     "Components/Gps/Src/NmeaParser.cpp"
@@ -64,7 +64,9 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     "Components/StateMachine/Src/TripState.cpp"
     "Components/StateMachine/Src/SpeedState.cpp"
     "Components/StateMachine/Src/StateManager.cpp"
-    "Components/Gyro/Src/Mpu6050.cpp"
+    "Components/Imu/Src/Mpu6050.cpp"
+    "Components/SensorFusion/Src/KalmanFilter1D.cpp"
+    "Components/SensorFusion/Src/SensorFusion.cpp"
 )
 
 # Add include paths
@@ -80,8 +82,9 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     "Components/Button/Inc"
     "Components/StateMachine/Inc"
     "Components/StateMachine/Interfaces"
-    "Components/Gyro/Inc"
-    "Components/Gyro/Interfaces"
+    "Components/Imu/Inc"
+    "Components/Imu/Interfaces"
+    "Components/SensorFusion/Inc"
 )
 
 # Add project symbols (macros)
