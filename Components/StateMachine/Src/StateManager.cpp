@@ -4,18 +4,22 @@ StateManager::StateManager(IDisplay& display, IGps& gps)
     : _display(display), _gps(gps), _currentState(nullptr) {
 }
 
+void StateManager::setInitialState(IState* initialState) {
+    _currentState = initialState;
+}
+
 void StateManager::changeState(IState* newState) {
-    // Perform exit routines for the previous state
-    if (_currentState != nullptr) {
-        _currentState->onExit();
+    if (newState != nullptr) {
+        if (_currentState != nullptr) {
+            _currentState->onExit();
+        }
+        _currentState = newState;
+        _display.clear();
+        _currentState->onEnter(_display);
     }
+}
 
-    _currentState = newState;
-    
-    // Clear the hardware display when transitioning to a new state
-    _display.clear(); 
-
-    // Perform entry (setup) routines for the new state
+void StateManager::forceRedraw() {
     if (_currentState != nullptr) {
         _currentState->onEnter(_display);
     }

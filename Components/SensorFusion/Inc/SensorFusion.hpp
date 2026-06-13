@@ -13,6 +13,7 @@ public:
     void init() override;
     bool update() override;
     GpsData getData() const override;
+    void resetTripDistance() override;
 
 private:
     IGps& _gps;

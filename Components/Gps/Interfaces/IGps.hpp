@@ -15,4 +15,7 @@ public:
 
     // Return the most recent valid data
     virtual GpsData getData() const = 0;
+
+    // Reset the accumulated trip distance
+    virtual void resetTripDistance() = 0;
 };

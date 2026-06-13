@@ -5,6 +5,7 @@ SensorFusion::SensorFusion(IGps& gps, IImu& imu)
     : _gps(gps), _imu(imu), _lastUpdateMs(0) {
     // Initialize fused data structure
     _fusedData = {0};
+    _fusedData.tripDistanceKm = 0.0f;
 }
 
 void SensorFusion::init() {
@@ -60,7 +61,10 @@ bool SensorFusion::update() {
             _kf.update(measured_v_ms);
             
             // We copy all absolute position/satellite data from the real GPS
+            // BUT preserve our integrated trip distance!
+            float preservedDistance = _fusedData.tripDistanceKm;
             _fusedData = gpsData;
+            _fusedData.tripDistanceKm = preservedDistance;
             newDataAvailable = true;
         }
     }
@@ -73,9 +77,17 @@ bool SensorFusion::update() {
     
     _fusedData.speedKmh = fusedVelocity_ms * 3.6f;
     
+    // Integrate distance (speed in m/s * time in s = distance in meters. Divide by 1000 for km)
+    _fusedData.tripDistanceKm += (fusedVelocity_ms * dt) / 1000.0f;
+    
     return newDataAvailable;
 }
 
 GpsData SensorFusion::getData() const {
     return _fusedData;
+}
+
+void SensorFusion::resetTripDistance() {
+    _fusedData.tripDistanceKm = 0.0f;
+    _gps.resetTripDistance(); // Propagate reset to underlying driver if it cares
 }

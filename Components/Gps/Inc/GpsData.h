@@ -8,4 +8,5 @@ struct GpsData {
     float altitude;    // Altitude
     uint8_t satellites;// Number of satellites
     bool isValid;      // Is the data valid? (GPS fix)
+    float tripDistanceKm; // Accumulated trip distance in km
 };

@@ -44,3 +44,7 @@ bool Neo6M::update() {
 GpsData Neo6M::getData() const {
     return _data;
 }
+
+void Neo6M::resetTripDistance() {
+    _data.tripDistanceKm = 0.0f;
+}

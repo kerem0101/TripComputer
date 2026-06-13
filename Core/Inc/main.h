@@ -71,6 +71,8 @@ void Error_Handler(void);
 #define LCD_D7_GPIO_Port GPIOC
 #define BTN_MAIN_Pin GPIO_PIN_10
 #define BTN_MAIN_GPIO_Port GPIOC
+#define SPI1_CS_Pin GPIO_PIN_5
+#define SPI1_CS_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

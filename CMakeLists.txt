@@ -67,6 +67,10 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     "Components/Imu/Src/Mpu6050.cpp"
     "Components/SensorFusion/Src/KalmanFilter1D.cpp"
     "Components/SensorFusion/Src/SensorFusion.cpp"
+    "Components/SdCard/Src/fatfs_sd.c"
+    "Components/Logger/Src/LoggerTask.cpp"
+    "Components/Simulation/Src/MockGps.cpp"
+    "Components/Simulation/Src/MockImu.cpp"
 )
 
 # Add include paths
@@ -85,11 +89,15 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     "Components/Imu/Inc"
     "Components/Imu/Interfaces"
     "Components/SensorFusion/Inc"
+    "Components/SdCard/Inc"
+    "Components/Logger/Inc"
+    "Components/Simulation/Inc"
 )
 
 # Add project symbols (macros)
 target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined symbols
+    SIMULATION_MODE=1
 )
 
 # Remove wrong libob.a library dependency when using cpp files
@@ -101,3 +109,5 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
 
     # Add user defined libraries
 )
+
+target_link_options(${CMAKE_PROJECT_NAME} PRIVATE "-u _printf_float")

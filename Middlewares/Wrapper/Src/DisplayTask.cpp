@@ -15,6 +15,7 @@ void DisplayTask::run() {
 
     _display.init(); // Initialize the display once at the start
     _display.clear(); // Clear the display before starting the main loop
+    _stateManager.forceRedraw(); // Draw the initial screen
 
     while (1) {
         uint32_t currentTick = bsp_system_get_tick_ms();
