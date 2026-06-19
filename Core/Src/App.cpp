@@ -58,19 +58,37 @@ static NavigationTask navTask(sensorFusion, imuDriver, &loggerTask);
 static DisplayTask displayTask(stateManager, mainButton, lcdDriver);
 static SystemTask systemTask;
 
+// Debug variables to track task creation and heap usage via ST-Link Watch
+volatile uint32_t dbg_heap_before = 0;
+volatile uint32_t dbg_heap_after_logger = 0;
+volatile uint32_t dbg_heap_after_all = 0;
+volatile uint8_t dbg_logger_started = 0;
+volatile uint8_t dbg_nav_started = 0;
+volatile uint8_t dbg_display_started = 0;
+volatile uint8_t dbg_system_started = 0;
+volatile uint8_t dbg_queue_created = 0;
+
 // ==========================================
 // MAIN INITIALIZATION (Calling from main.c)
 // ==========================================
 void App_Main() {
     
+    dbg_heap_before = xPortGetFreeHeapSize();
+    
     // Initialize RTOS objects (must be called after osKernelInitialize in main.c)
     loggerTask.init();
-
+    dbg_queue_created = (loggerTask.pushData(LogData{}) == false) ? 0 : 1; // Test if queue exists
+    // Actually just check if init set the queue - pushData returns false if queue is NULL
+    
     // Set the initial screen for the Trip Computer WITHOUT drawing it yet
     stateManager.setInitialState(&speedState);
 
-    navTask.start();
-    displayTask.start();
-    systemTask.start();
-    loggerTask.start();
+    // Start LoggerTask FIRST - it needs the most heap
+    dbg_logger_started = loggerTask.start() ? 1 : 0;
+    dbg_heap_after_logger = xPortGetFreeHeapSize();
+    
+    dbg_nav_started = navTask.start() ? 1 : 0;
+    dbg_display_started = displayTask.start() ? 1 : 0;
+    dbg_system_started = systemTask.start() ? 1 : 0;
+    dbg_heap_after_all = xPortGetFreeHeapSize();
 }

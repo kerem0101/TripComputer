@@ -27,4 +27,5 @@ protected:
 private:
     osMessageQueueId_t _logQueue;
     FATFS _fs;
+    FIL _file;
 };

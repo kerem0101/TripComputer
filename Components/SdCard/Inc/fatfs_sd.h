@@ -4,12 +4,13 @@
 #include "integer.h"
 #include "diskio.h"
 #include "stm32f0xx_hal.h"
+#include "main.h"
 
 // Hardware configuration
 extern SPI_HandleTypeDef hspi1;
 #define SD_SPI_HANDLE (&hspi1)
-#define SD_CS_PORT    GPIOB
-#define SD_CS_PIN     GPIO_PIN_5
+#define SD_CS_PORT    SPI1_CS_GPIO_Port
+#define SD_CS_PIN     SPI1_CS_Pin
 
 // Definitions for MMC/SDC command
 #define CMD0     (0x40+0)     /* GO_IDLE_STATE */
@@ -24,7 +25,8 @@ extern SPI_HandleTypeDef hspi1;
 #define CMD23    (0x40+23)    /* SET_BLOCK_COUNT */
 #define CMD24    (0x40+24)    /* WRITE_BLOCK */
 #define CMD25    (0x40+25)    /* WRITE_MULTIPLE_BLOCK */
-#define CMD41    (0x40+41)    /* SEND_OP_COND (ACMD) */
+#define CMD41    (0x40+41)
+#define ACMD41   (0xC0+41)    /* SEND_OP_COND (ACMD) */
 #define CMD55    (0x40+55)    /* APP_CMD */
 #define CMD58    (0x40+58)    /* READ_OCR */
 

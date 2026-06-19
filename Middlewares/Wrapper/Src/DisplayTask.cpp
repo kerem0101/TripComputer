@@ -9,6 +9,8 @@ DisplayTask::DisplayTask(StateManager& stateManager, Button& mainButton, IDispla
       _display(display) {
 }
 
+extern volatile bool isSdCardBusy;
+
 void DisplayTask::run() {
     uint32_t lastDisplayUpdateMs = 0;
     const uint32_t displayUpdateIntervalMs = 500; // Update LCD every 500ms to avoid flicker
@@ -22,22 +24,21 @@ void DisplayTask::run() {
 
         // 1. FAST POLLING: Update the button state (Debounce logic)
         _mainButton.update(currentTick);
-        ButtonEvent event = _mainButton.getEvent();
 
-        // 2. EVENT HANDLING: If a button was pressed, forward it immediately
-        if (event != ButtonEvent::None) {
-            _stateManager.handleButtonEvent(event);
-            
-            // Optional: Force an immediate display update when a button is pressed
-            // so the user doesn't feel a lag when changing screens.
-            _stateManager.update();
-            lastDisplayUpdateMs = currentTick; 
-        }
+        // 2. EVENT HANDLING: If a button was pressed, forward it safely when SD card is idle
+        if (!isSdCardBusy) {
+            ButtonEvent event = _mainButton.getEvent();
+            if (event != ButtonEvent::None) {
+                _stateManager.handleButtonEvent(event);
+                _stateManager.update();
+                lastDisplayUpdateMs = currentTick; 
+            }
 
-        // 3. SLOW POLLING: Update the display periodically for GPS data
-        if ((currentTick - lastDisplayUpdateMs) >= displayUpdateIntervalMs) {
-            _stateManager.update();
-            lastDisplayUpdateMs = currentTick;
+            // 3. SLOW POLLING: Update the display periodically for GPS data
+            if ((currentTick - lastDisplayUpdateMs) >= displayUpdateIntervalMs) {
+                _stateManager.update();
+                lastDisplayUpdateMs = currentTick;
+            }
         }
 
         // Sleep for 20ms. This yields the CPU to other tasks (like GPS) 
